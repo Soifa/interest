@@ -27,9 +27,67 @@
         gap: 50px;
       }
       
+      .intro {
+        flex: 2;
+        max-width: 20%;
+      }
+
+      .intro h1 {
+        font-family: "Kirang Haerang", system-ui;
+        font-size: 4.75em;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.25em;
+      }
+
+      .intro h1 span:nth-child(1) {
+        color: #9747FF;
+      }
+
+      /* purple */
+      .intro h1 span:nth-child(2) {
+        color: #00A0EC;
+      }
+
+      /* blue */
+      .intro h1 span:nth-child(3) {
+        color: #52B13A;
+      }
+
+      /* green */
+      .intro h1 span:nth-child(4) {
+        color: #D4A2FF;
+      }
+
+      /* lightPurple */
+      .intro h1 span:nth-child(5) {
+        color: #FF4491;
+      }
+
+      /* pastel pink */
+      .intro h1 span:nth-child(6) {
+        color: #00A0EC;
+      }
+
+      /* blue */
+      .intro h1 span:nth-child(7) {
+        color: #FE97AC;
+      }
+
+      /* light pink */
+
+      .intro p {
+        font-family: "Kite One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.6;
+        font-size: 3em;
+        max-width: 37.5em;
+      }
+      
       .photo-wrapper {
         flex: 1;
-        max-width: 40%;
+        max-width: 80%;
       }
 
       .photo-wrapper img {
@@ -78,9 +136,37 @@
         <li><a href="#artwork">Artwork</a></li>
       </ul>
 
-      <div class="container">
-      
+    <div class="container">
+        <div class="intro">
+          <h1>
+            Game
+          </h1>
+        </div>
       </div>
+    
+      <div class="container">
+        <div class="photo-wrapper">
+          <img src="grounded.png" alt="game-grounded">
+        </div>
+        <div class="intro">
+          <p>
+            Grounded
+          </p>
+        </div>
+      </div>
+    
+    <div class="container">
+      <div class="intro">
+          <p>
+            Grounded
+          </p>
+        </div>
+        <div class="photo-wrapper">
+          <img src="grounded.png" alt="game-grounded">
+        </div>
+      </div>
+        
+        
     </div>
     
   </body>
