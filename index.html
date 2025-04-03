@@ -1,23 +1,88 @@
 <!DOCTYPE html>
-<style>
-  /* netnet default bg */
-  body {
-    margin: 0;
-    background-image: linear-gradient(#515199a8 2px, transparent 1px),
-      linear-gradient(90deg, #515199a8 2px, transparent 1px);
-    background-size: 50px 50px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <title>Background</title>
+    <!-- FONT EMBED -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kirang+Haerang&family=Kite+One&display=swap" rel="stylesheet">
 
-  body::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(0deg, #c76ebca8, #515199a8);
-  }
-</style>
+    <style>
+      body {
+        background-color: #FFED81;
+        margin: 0;
+        font-size: 16px;
+      }
+
+      .webInfo {
+        width: 100vw;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        gap: 50px;
+      }
+      
+      .photo-wrapper {
+        flex: 1;
+        max-width: 40%;
+      }
+
+      .photo-wrapper img {
+        width: 100%;
+      }
+      
+      ul {
+        list-style-type: none;
+        overflow: hidden;
+        display: flex;
+        justify-content: right;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        position: relative;
+        display: block;
+        padding: 10px 40px;
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        color: #FF4491;
+        border-bottom: 4px solid #FF4491;
+        transition: border-color 0.3s ease;
+      }
+      
+      li a:hover {
+        border-bottom: 4px solid #00A0EC;
+      }
+      
+      li a[href="#interest"] {
+        color: #9747FF;
+        border-bottom: 4px solid #A020F0;
+      }
+    </style>
+  </head>
+  
+  <body>
+  <div class="webInfo">
+      <ul>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#interest">Interest</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#artwork">Artwork</a></li>
+      </ul>
+
+      <div class="container">
+      
+      </div>
+    </div>
     
+  </body>
+  
+</html>
