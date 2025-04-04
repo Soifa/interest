@@ -26,7 +26,7 @@
         padding: 50px;
         gap: 50px;
       }
-      
+
       .intro {
         flex: 2;
         max-width: 20%;
@@ -34,7 +34,7 @@
 
       .intro h1 {
         font-family: "Kirang Haerang", system-ui;
-        font-size: 18em;
+        font-size: 8em;
         font-weight: 400;
         font-style: normal;
         letter-spacing: 0.25em;
@@ -76,19 +76,19 @@
       }
 
       /* light pink */
-      
+
       .intro h1 span:nth-child(8) {
         color: #00A0EC;
       }
 
       /* blue */
-      
+
       .intro h1 span:nth-child(9) {
         color: #52B13A;
       }
 
       /* green */
-      
+
       .intro h1 span:nth-child(10) {
         color: #FF4491;
       }
@@ -103,16 +103,28 @@
         font-size: 3em;
         max-width: 37.5em;
       }
-      
+
       .photo-wrapper {
         flex: 1;
         max-width: 80%;
       }
 
       .photo-wrapper img {
-        width: 100%;
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
       }
-      
+
+      .flute-img {
+        width: 70%;
+        /* or use clamp() for responsiveness */
+        max-width: 500px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
       ul {
         list-style-type: none;
         overflow: hidden;
@@ -134,20 +146,20 @@
         border-bottom: 4px solid #FF4491;
         transition: border-color 0.3s ease;
       }
-      
+
       li a:hover {
         border-bottom: 4px solid #00A0EC;
       }
-      
+
       li a[href="#interest"] {
         color: #9747FF;
         border-bottom: 4px solid #A020F0;
       }
     </style>
   </head>
-  
+
   <body>
-  <div class="webInfo">
+    <div class="webInfo">
       <ul>
         <li><a href="https://soifa.github.io/Assignment-3/">Background</a></li>
         <li><a href="#interest">Interest</a></li>
@@ -155,15 +167,15 @@
         <li><a href="#artwork">Artwork</a></li>
       </ul>
 
-    <!-- Game Title -->
-    <div class="container">
+      <!-- Game Title -->
+      <div class="container">
         <div class="intro">
           <h1>
             <span>G</span><span>a</span><span>m</span><span>e</span>
           </h1>
         </div>
       </div>
-    
+
       <!-- Grounded -->
       <div class="container">
         <div class="photo-wrapper">
@@ -175,10 +187,10 @@
           </p>
         </div>
       </div>
-    
-    <!-- Raft -->
-    <div class="container">
-      <div class="intro">
+
+      <!-- Raft -->
+      <div class="container">
+        <div class="intro">
           <p>
             Raft
           </p>
@@ -187,9 +199,9 @@
           <img src="raft.jpg" alt="game-raft">
         </div>
       </div>
-        
-    <!-- Genshin -->
-    <div class="container">
+
+      <!-- Genshin -->
+      <div class="container">
         <div class="photo-wrapper">
           <img src="genshin.jpeg" alt="game-genshin">
         </div>
@@ -199,19 +211,19 @@
           </p>
         </div>
       </div>
-    
-    <!-- Instrument Title -->
-    <div class="container">
+
+      <!-- Instrument Title -->
+      <div class="container">
         <div class="intro">
           <h1>
             <span>I</span><span>n</span><span>s</span><span>t</span><span>r</span><span>u</span><span>m</span><span>e</span><span>n</span><span>t</span>
           </h1>
         </div>
       </div>
-    
-    <!-- Flute -->
-    <div class="container">
-      <div class="intro">
+
+      <!-- Flute -->
+      <div class="container">
+        <div class="intro">
           <p>
             Bamboo Flute
           </p>
@@ -220,9 +232,9 @@
           <img src="flute Background Removed.png" alt="game-raft">
         </div>
       </div>
-    
-    <!-- Hulusi -->
-    <div class="container">
+
+      <!-- Hulusi -->
+      <div class="container">
         <div class="photo-wrapper">
           <img src="Hulusi.png" alt="game-genshin">
         </div>
@@ -232,11 +244,11 @@
           </p>
         </div>
       </div>
-    
-    
-        
+
+
+
     </div>
-    
+
   </body>
-  
+
 </html>
